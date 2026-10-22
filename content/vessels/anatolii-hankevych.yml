@@ -1,0 +1,36 @@
+# Судно. order — место в карусели (меньше = раньше). note — служебная заметка, на сайте не показывается.
+order: 10
+slug: anatolii-hankevych
+name: ANATOLII HANKEVYCH
+name_en: ''
+type:
+  ru: теплоход
+  en: motor vessel
+company:
+  ru: «НИБУЛОН» (Nibulon Ltd)
+  en: Nibulon Ltd
+position:
+  ru: Капитан
+  en: Captain
+period:
+  ru: 08.2026 – наст. время
+  en: 08.2026 – present
+contracts:
+- dates:
+    ru: 15.08.2026 – наст. время
+    en: 15.08.2026 – present
+  port:
+    ru: Измаил
+    en: Izmail
+area:
+  ru: река Дунай
+  en: the Danube River
+photo: /images/vessels/anatolii-hankevych.jpg
+thumb_pos: ''
+marking:
+  ru: ''
+  en: ''
+description:
+  ru: '[Описание судна, по желанию]'
+  en: '[Vessel description, optional]'
+note: ''

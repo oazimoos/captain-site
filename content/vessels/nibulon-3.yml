@@ -1,0 +1,42 @@
+# Судно. order — место в карусели (меньше = раньше). note — служебная заметка, на сайте не показывается.
+order: 20
+slug: nibulon-3
+name: Nibulon-3
+name_en: ''
+type:
+  ru: теплоход
+  en: motor vessel
+company:
+  ru: «НИБУЛОН» (Nibulon Ltd)
+  en: Nibulon Ltd
+position:
+  ru: Капитан
+  en: Captain
+period:
+  ru: 02.2025 – 06.2026
+  en: ''
+contracts:
+- dates:
+    ru: 01.02.2025 – 15.08.2025
+    en: ''
+  port:
+    ru: Николаев
+    en: Mykolaiv
+- dates:
+    ru: 01.11.2025 – 30.06.2026
+    en: ''
+  port:
+    ru: Одесса
+    en: Odesa
+area:
+  ru: река Дунай
+  en: the Danube River
+photo: /images/vessels/nibulon-3.jpg
+thumb_pos: ''
+marking:
+  ru: ''
+  en: ''
+description:
+  ru: '[Описание судна, по желанию]'
+  en: '[Vessel description, optional]'
+note: ''

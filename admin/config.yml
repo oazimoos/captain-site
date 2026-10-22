@@ -1,0 +1,239 @@
+# Decap CMS — редактор контента (https://decapcms.org/docs/)
+# Вход через GitHub. Требуется GitHub OAuth App + провайдер GitHub в Netlify
+# (Site configuration → Access & security → OAuth). См. README.md.
+locale: ru
+
+backend:
+  name: github
+  repo: oazimoos/captain-site
+  branch: main
+  commit_messages:
+    create: 'Добавлено: {{collection}} «{{slug}}»'
+    update: 'Изменено: {{collection}} «{{slug}}»'
+    delete: 'Удалено: {{collection}} «{{slug}}»'
+    uploadMedia: 'Загружено фото «{{path}}»'
+    deleteMedia: 'Удалено фото «{{path}}»'
+
+# Фото по умолчанию: файлы кладутся в static/images, на сайте путь /images/...
+media_folder: static/images
+public_folder: /images
+
+# Наборы полей «RU / EN» объявлены якорями (&...) при первом использовании
+# и переиспользуются ссылками (*...).
+
+collections:
+  # ================= ГЛАВНАЯ СТРАНИЦА =================
+  - name: site
+    label: 'Сайт'
+    editor: { preview: false }
+    files:
+      - name: site
+        label: 'Главная страница'
+        file: content/site.yml
+        fields:
+          - label: 'SEO и соцсети'
+            name: meta
+            widget: object
+            collapsed: true
+            fields:
+              - { label: 'Заголовок вкладки (title)', name: title, widget: string }
+              - { label: 'Описание (meta description)', name: description, widget: text }
+              - { label: 'OG: заголовок', name: og_title, widget: string, required: false }
+              - { label: 'OG: описание', name: og_description, widget: text, required: false }
+              - { label: 'OG: адрес сайта (https://...)', name: og_url, widget: string, required: false }
+              - { label: 'OG: картинка (полный URL)', name: og_image, widget: string, required: false }
+          - label: 'Обо мне: личные данные'
+            name: person
+            widget: object
+            collapsed: true
+            fields:
+              - { label: 'Имя', name: name, widget: object, fields: &ru_en_string [ { label: 'RU', name: ru, widget: string }, { label: 'EN (пусто = как RU)', name: en, widget: string, required: false } ] }
+              - { label: 'Имя в шапке (кратко)', name: brand, widget: object, fields: *ru_en_string }
+              - { label: 'Должность (в подвале)', name: job_title, widget: object, fields: *ru_en_string }
+              - { label: 'Email', name: email, widget: string }
+              - { label: 'Телефон (пусто = не показывать)', name: phone, widget: string, required: false }
+              - { label: 'Фото', name: photo, widget: image }
+              - { label: 'Текущий работодатель (для поисковиков)', name: works_for, widget: string, required: false }
+              - { label: 'Коды языков (для поисковиков)', name: language_codes, widget: list, required: false }
+          - label: 'Меню'
+            name: nav
+            widget: object
+            collapsed: true
+            fields:
+              - { label: 'Обо мне', name: about, widget: object, fields: *ru_en_string }
+              - { label: 'Образование', name: education, widget: object, fields: *ru_en_string }
+              - { label: 'Опыт', name: experience, widget: object, fields: *ru_en_string }
+              - { label: 'Мои суда', name: vessels, widget: object, fields: *ru_en_string }
+              - { label: 'Районы плавания', name: route, widget: object, fields: *ru_en_string }
+              - { label: 'Контакты', name: contact, widget: object, fields: *ru_en_string }
+          - label: 'Первый экран'
+            name: hero
+            widget: object
+            collapsed: true
+            fields:
+              - { label: 'Надзаголовок', name: eyebrow, widget: object, fields: *ru_en_string }
+              - { label: 'Подзаголовок', name: title, widget: object, fields: &ru_en_text [ { label: 'RU', name: ru, widget: text }, { label: 'EN (пусто = как RU)', name: en, widget: text, required: false } ] }
+              - { label: 'Вводный текст', name: lead, widget: object, fields: *ru_en_text }
+              - { label: 'Кнопка «Связаться»', name: cta_contact, widget: object, fields: *ru_en_string }
+              - { label: 'Кнопка «Опыт»', name: cta_experience, widget: object, fields: *ru_en_string }
+          - label: 'Раздел «Обо мне»'
+            name: about
+            widget: object
+            collapsed: true
+            fields:
+              - { label: 'Надзаголовок', name: eyebrow, widget: object, fields: *ru_en_string }
+              - { label: 'Заголовок', name: heading, widget: object, fields: *ru_en_string }
+              - { label: 'Абзацы', name: paragraphs, widget: list, fields: *ru_en_text }
+              - label: 'Цифры'
+                name: stats
+                widget: list
+                fields:
+                  - { label: 'Значение', name: value, widget: object, fields: *ru_en_string }
+                  - { label: 'Подпись', name: label, widget: object, fields: *ru_en_string }
+          - label: 'Образование и дипломы'
+            name: education
+            widget: object
+            collapsed: true
+            fields:
+              - { label: 'Надзаголовок', name: eyebrow, widget: object, fields: *ru_en_string }
+              - { label: 'Заголовок', name: heading, widget: object, fields: *ru_en_string }
+              - label: 'Учебные заведения'
+                name: items
+                widget: list
+                fields:
+                  - { label: 'Годы', name: years, widget: string }
+                  - { label: 'Значок', name: icon, widget: string, required: false }
+                  - { label: 'Степень и специальность', name: title, widget: object, fields: *ru_en_string }
+                  - { label: 'Специализация', name: specialization, widget: object, fields: *ru_en_string }
+                  - { label: 'Учебное заведение', name: institution, widget: object, fields: *ru_en_string }
+              - label: 'Рабочие дипломы и сертификаты'
+                name: certificates
+                widget: object
+                fields:
+                  - { label: 'Метка', name: date, widget: object, fields: *ru_en_string }
+                  - { label: 'Заголовок', name: title, widget: object, fields: *ru_en_string }
+                  - { label: 'Текст', name: text, widget: object, fields: *ru_en_text }
+          - label: 'Опыт работы'
+            name: experience
+            widget: object
+            collapsed: true
+            fields:
+              - { label: 'Надзаголовок', name: eyebrow, widget: object, fields: *ru_en_string }
+              - { label: 'Заголовок', name: heading, widget: object, fields: *ru_en_string }
+              - label: 'Должности (новые сверху)'
+                name: items
+                widget: list
+                summary: '{{fields.dates.ru}} — {{fields.title.ru}}'
+                fields:
+                  - { label: 'Даты', name: dates, widget: object, fields: *ru_en_string }
+                  - { label: 'Должность · компания', name: title, widget: object, fields: *ru_en_string }
+                  - { label: 'Описание', name: text, widget: object, fields: *ru_en_text }
+          - label: 'Раздел «Мои суда» (заголовки)'
+            name: vessels_section
+            widget: object
+            collapsed: true
+            fields:
+              - { label: 'Надзаголовок', name: eyebrow, widget: object, fields: *ru_en_string }
+              - { label: 'Заголовок', name: heading, widget: object, fields: *ru_en_string }
+              - { label: 'Подзаголовок', name: subtitle, widget: object, fields: *ru_en_string }
+          - label: 'Навыки и качества'
+            name: skills
+            widget: object
+            collapsed: true
+            fields:
+              - { label: 'Надзаголовок', name: eyebrow, widget: object, fields: *ru_en_string }
+              - { label: 'Заголовок', name: heading, widget: object, fields: *ru_en_string }
+              - label: 'Профессиональные навыки'
+                name: professional
+                widget: object
+                fields:
+                  - { label: 'Заголовок', name: title, widget: object, fields: *ru_en_string }
+                  - { label: 'Пункты', name: items, widget: list, fields: *ru_en_string }
+              - label: 'Личные качества'
+                name: qualities
+                widget: object
+                fields:
+                  - { label: 'Заголовок', name: title, widget: object, fields: *ru_en_string }
+                  - { label: 'Пункты', name: items, widget: list, fields: *ru_en_string }
+              - label: 'Языки'
+                name: languages
+                widget: object
+                fields:
+                  - { label: 'Заголовок', name: title, widget: object, fields: *ru_en_string }
+                  - { label: 'Языки', name: items, widget: list, fields: *ru_en_string }
+              - label: 'Хобби'
+                name: hobby
+                widget: object
+                fields:
+                  - { label: 'Заголовок', name: title, widget: object, fields: *ru_en_string }
+                  - { label: 'Пункты', name: items, widget: list, fields: *ru_en_string }
+          - label: 'Районы плавания'
+            name: route
+            widget: object
+            collapsed: true
+            fields:
+              - { label: 'Надзаголовок', name: eyebrow, widget: object, fields: *ru_en_string }
+              - { label: 'Заголовок', name: heading, widget: object, fields: *ru_en_string }
+              - { label: 'Подзаголовок', name: subtitle, widget: object, fields: *ru_en_string }
+              - label: 'Районы (список под схемой)'
+                name: areas
+                widget: list
+                fields:
+                  - { label: 'Район', name: name, widget: object, fields: *ru_en_string }
+                  - { label: 'Порты', name: ports, widget: object, fields: &ru_en_optional [ { label: 'RU', name: ru, widget: string, required: false }, { label: 'EN (пусто = как RU)', name: en, widget: string, required: false } ] }
+              - { label: 'Подпись к схеме', name: caption, widget: object, fields: *ru_en_string }
+          - label: 'Контакты'
+            name: contact
+            widget: object
+            collapsed: true
+            fields:
+              - { label: 'Надзаголовок', name: eyebrow, widget: object, fields: *ru_en_string }
+              - { label: 'Заголовок', name: heading, widget: object, fields: *ru_en_string }
+              - { label: 'Текст', name: text, widget: object, fields: *ru_en_text }
+              - label: 'Соцсети'
+                name: socials
+                widget: list
+                fields:
+                  - { label: 'Название', name: name, widget: string }
+                  - { label: 'Ссылка', name: url, widget: string }
+                  - { label: 'Подпись', name: handle, widget: object, fields: *ru_en_optional }
+
+  # ================= СУДА =================
+  - name: vessels
+    label: 'Суда'
+    label_singular: 'Судно'
+    description: 'Карусель «Мои суда» и отдельные страницы. Порядок — поле «Порядок» (меньше = раньше).'
+    folder: content/vessels
+    extension: yml
+    format: yml
+    create: true
+    delete: true
+    slug: '{{fields.slug}}'
+    identifier_field: name
+    summary: '{{order}} · {{name}}'
+    sortable_fields: [order, name]
+    editor: { preview: false }
+    media_folder: /static/images/vessels
+    public_folder: /images/vessels
+    fields:
+      - { label: 'Порядок в карусели', name: order, widget: number, value_type: int, hint: 'Меньше = раньше. Шаг 10, чтобы вставлять между.' }
+      - { label: 'Адрес страницы (slug)', name: slug, widget: string, pattern: ['^[a-z0-9-]+$', 'Только латиница в нижнем регистре, цифры и дефис'], hint: 'Например: plutus → страница vessels/plutus.html' }
+      - { label: 'Название (RU)', name: name, widget: string }
+      - { label: 'Название (EN, пусто = как RU)', name: name_en, widget: string, required: false }
+      - { label: 'Тип', name: type, widget: object, fields: *ru_en_string }
+      - { label: 'Судовладелец / компания', name: company, widget: object, fields: *ru_en_string }
+      - { label: 'Должность', name: position, widget: object, fields: *ru_en_string }
+      - { label: 'Период (кратко, для карточки)', name: period, widget: object, fields: *ru_en_string }
+      - label: 'Контракты (точные даты)'
+        name: contracts
+        widget: list
+        summary: '{{fields.dates.ru}}'
+        fields:
+          - { label: 'Даты', name: dates, widget: object, fields: *ru_en_string }
+          - { label: 'Порт приёма на судно', name: port, widget: object, fields: *ru_en_optional }
+      - { label: 'Район плавания', name: area, widget: object, fields: *ru_en_string }
+      - { label: 'Фото', name: photo, widget: image, hint: 'Горизонтальное, ~1600 px по ширине, до ~400 КБ' }
+      - { label: 'Кадрирование карточки', name: thumb_pos, widget: string, required: false, hint: 'CSS object-position, например «90% 50%» — показать правую часть фото' }
+      - { label: 'Маркировка на борту (по фото)', name: marking, widget: object, required: false, fields: *ru_en_optional }
+      - { label: 'Описание судна', name: description, widget: object, required: false, fields: *ru_en_text }
+      - { label: 'Служебная заметка (на сайте не видна)', name: note, widget: text, required: false }

@@ -1,0 +1,22 @@
+# Python / окружения
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Результат сборки
+dist/
+
+# Резервные копии и скриншоты
+backup/
+backups/
+shots/
+screenshots/
+preview-*.png
+*.bak
+
+# Системное
+.DS_Store
+Thumbs.db
+node_modules/

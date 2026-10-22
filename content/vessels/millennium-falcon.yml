@@ -1,0 +1,42 @@
+# Судно. order — место в карусели (меньше = раньше). note — служебная заметка, на сайте не показывается.
+order: 30
+slug: millennium-falcon
+name: MILLENNIUM FALCON
+name_en: ''
+type:
+  ru: толкач
+  en: pusher
+company:
+  ru: Warden Chartering s.r.o.
+  en: ''
+position:
+  ru: Капитан
+  en: Captain
+period:
+  ru: 06.2024 – 12.2024
+  en: ''
+contracts:
+- dates:
+    ru: 01.06.2024 – 30.09.2024
+    en: ''
+  port:
+    ru: Измаил
+    en: Izmail
+- dates:
+    ru: 16.10.2024 – 25.12.2024
+    en: ''
+  port:
+    ru: Измаил
+    en: Izmail
+area:
+  ru: река Дунай
+  en: the Danube River
+photo: /images/vessels/millennium-falcon.jpg
+thumb_pos: ''
+marking:
+  ru: L 23.50 · B 8.54 · T 5.1; номер 0200692
+  en: L 23.50 · B 8.54 · T 5.1; number 0200692
+description:
+  ru: '[Описание судна, по желанию]'
+  en: '[Vessel description, optional]'
+note: ''

@@ -1,0 +1,36 @@
+# Судно. order — место в карусели (меньше = раньше). note — служебная заметка, на сайте не показывается.
+order: 90
+slug: bt-438
+name: БТ-438
+name_en: BT-438
+type:
+  ru: буксир-толкач
+  en: pusher tug
+company:
+  ru: «Вик-Ойл», Николаев
+  en: Vik-Oil, Mykolaiv
+position:
+  ru: Сменный капитан
+  en: Relief Captain
+period:
+  ru: 08.2015 – 05.2016
+  en: ''
+contracts:
+- dates:
+    ru: 03.08.2015 – 17.05.2016
+    en: ''
+  port:
+    ru: ''
+    en: ''
+area:
+  ru: Днепр, Южный Буг, северо-западная часть Чёрного моря (порты Очаков, Николаев, Херсон)
+  en: Dnipro, Southern Bug, north-western Black Sea (ports of Ochakiv, Mykolaiv, Kherson)
+photo: /images/vessels/bt-438.jpg
+thumb_pos: 90% 50%
+marking:
+  ru: ''
+  en: ''
+description:
+  ru: '[Описание судна, по желанию]'
+  en: '[Vessel description, optional]'
+note: ''

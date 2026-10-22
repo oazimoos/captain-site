@@ -1,0 +1,36 @@
+# Судно. order — место в карусели (меньше = раньше). note — служебная заметка, на сайте не показывается.
+order: 50
+slug: antoil-4
+name: ANTOIL-4
+name_en: ''
+type:
+  ru: танкер-продуктовоз
+  en: product tanker
+company:
+  ru: «Pelargus KFT»
+  en: Pelargus KFT
+position:
+  ru: Капитан
+  en: Captain
+period:
+  ru: 06.2022 – 03.2024
+  en: ''
+contracts:
+- dates:
+    ru: 01.06.2022 – 24.03.2024
+    en: ''
+  port:
+    ru: ''
+    en: ''
+area:
+  ru: река Дунай
+  en: the Danube
+photo: /images/vessels/antoil-4.jpg
+thumb_pos: ''
+marking:
+  ru: ''
+  en: ''
+description:
+  ru: '[Описание судна, по желанию]'
+  en: '[Vessel description, optional]'
+note: ''

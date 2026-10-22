@@ -1,0 +1,362 @@
+# Содержимое главной страницы. Все тексты: ru — русский, en — английский
+# (пустой en = как в ru). Значения «[ ... ]» — заглушки, их видно на сайте.
+# После правки: python3 build.py (или через админку /admin — сборка на Netlify).
+
+meta:
+  title: Олег Ерулевич — капитан · Дунай и внутренние водные пути Украины
+  description: 'Олег Ерулевич — капитан в компании «НИБУЛОН». Теплоходы, танкеры и буксиры-толкачи: Дунай, Днепр, Южный Буг, северо-западная часть Чёрного моря. Опыт, образование, суда и контакты.'
+  og_title: Олег Ерулевич — капитан · Дунай и внутренние водные пути Украины
+  og_description: 'Капитан в компании «НИБУЛОН». Теплоходы, танкеры и буксиры-толкачи: Дунай, Днепр, Южный Буг, северо-запад Чёрного моря.'
+  og_url: '[https://ваш-сайт.example]'
+  og_image: '[https://ваш-сайт.example/images/photo.jpg]'
+person:
+  name:
+    ru: Олег Ерулевич
+    en: Oleg Yerulevych
+  brand:
+    ru: О. Ерулевич
+    en: O. Yerulevych
+  job_title:
+    ru: Капитан
+    en: Captain
+  email: oazimoos@gmail.com
+  phone: ''
+  photo: /images/photo.jpg
+  works_for: Nibulon Ltd
+  language_codes:
+  - uk
+  - en
+  - ru
+nav:
+  about:
+    ru: Обо мне
+    en: About
+  education:
+    ru: Образование
+    en: Education
+  experience:
+    ru: Опыт
+    en: Experience
+  vessels:
+    ru: Мои суда
+    en: My vessels
+  route:
+    ru: Районы плавания
+    en: Sailing areas
+  contact:
+    ru: Контакты
+    en: Contact
+hero:
+  eyebrow:
+    ru: Портфолио
+    en: Portfolio
+  title:
+    ru: Капитан теплоходов, танкеров и буксиров · Дунай и внутренние водные пути Украины
+    en: Captain of motor vessels, tankers and tugs · Danube & Ukrainian inland waterways
+  lead:
+    ru: 'Сейчас — капитан теплохода «ANATOLII HANKEVYCH» в компании «НИБУЛОН». На флоте с 2015 года: теплоходы, танкеры и буксиры-толкачи на Дунае, Днепре, Южном Буге и в северо-западной части Чёрного моря.'
+    en: 'Currently captain of the motor vessel ANATOLII HANKEVYCH at Nibulon. In the fleet since 2015: motor vessels, tankers and pusher tugs on the Danube, Dnipro, Southern Bug and in the north-western Black Sea.'
+  cta_contact:
+    ru: Связаться
+    en: Get in touch
+  cta_experience:
+    ru: Опыт работы
+    en: Experience
+about:
+  eyebrow:
+    ru: Обо мне
+    en: About
+  heading:
+    ru: Капитан с опытом на реках и в море
+    en: A captain with river and sea experience
+  paragraphs:
+  - ru: 'С 2015 года работаю на флоте: сменным капитаном, старшим помощником капитана и капитаном буксиров-толкачей, линейного буксира, танкеров и теплоходов. С 08.2026 — капитан теплохода «ANATOLII HANKEVYCH» в компании «НИБУЛОН».'
+    en: 'I have worked in the fleet since 2015: as relief captain, chief mate, and captain of pusher tugs, a line tug, tankers and motor vessels. Since 08.2026, captain of the motor vessel ANATOLII HANKEVYCH at Nibulon.'
+  - ru: Работал на внутренних водных путях Украины — Днепре и Южном Буге, в северо-западной части Чёрного моря (порты Очаков, Николаев, Херсон, Одесса, Черноморск, Южный) и на Дунае (Измаил). Образование — бакалавр по судовождению и инженер-электромеханик.
+    en: 'I have worked on Ukraine''s inland waterways (the Dnipro and Southern Bug), in the north-western Black Sea (ports of Ochakiv, Mykolaiv, Kherson, Odesa, Chornomorsk, Pivdennyi) and on the Danube (Izmail). Education: Bachelor in Navigation and electromechanical engineer.'
+  stats:
+  - value:
+      ru: с 2015
+      en: since 2015
+    label:
+      ru: на флоте
+      en: in the fleet
+  - value:
+      ru: '9'
+      en: ''
+    label:
+      ru: судов в послужном списке
+      en: vessels served on
+  - value:
+      ru: '3'
+      en: ''
+    label:
+      ru: реки + северо-запад Чёрного моря
+      en: rivers + north-western Black Sea
+education:
+  eyebrow:
+    ru: Квалификация
+    en: Qualifications
+  heading:
+    ru: Образование и дипломы
+    en: Education & certificates
+  items:
+  - years: 2012 – 2014
+    icon: ⚓
+    title:
+      ru: Бакалавр · Морской и речной транспорт
+      en: Bachelor · Sea and River Transport
+    specialization:
+      ru: 'Специализация: судовождение'
+      en: 'Specialisation: Navigation'
+    institution:
+      ru: Киевская государственная академия водного транспорта имени гетмана Петра Конашевича-Сагайдачного
+      en: Hetman Petro Konashevych-Sahaidachnyi Kyiv State Academy of Water Transport
+  - years: 2008 – 2013
+    icon: ⚙
+    title:
+      ru: Специалист · Медицинские приборы и системы
+      en: Specialist degree · Medical Devices and Systems
+    specialization:
+      ru: 'Специализация: инженер-электромеханик'
+      en: 'Specialisation: electromechanical engineer'
+    institution:
+      ru: Черноморский государственный университет имени Петра Могилы
+      en: Petro Mohyla Black Sea State University
+  certificates:
+    date:
+      ru: '[дополнить]'
+      en: '[to be added]'
+    title:
+      ru: Рабочие дипломы и сертификаты
+      en: Professional licences & certificates
+    text:
+      ru: '[добавить: категория диплома капитана, ADN, радар и т. д. — с номерами и сроками действия]'
+      en: '[add: captain''s licence category, ADN, radar, etc. — with numbers and validity dates]'
+experience:
+  eyebrow:
+    ru: Опыт
+    en: Experience
+  heading:
+    ru: Опыт работы
+    en: Work experience
+  items:
+  - dates:
+      ru: 08.2026 – наст. время
+      en: 08.2026 – present
+    title:
+      ru: Капитан · «НИБУЛОН» (Nibulon Ltd)
+      en: Captain · Nibulon Ltd
+    text:
+      ru: 'Теплоход «ANATOLII HANKEVYCH». Приём на судно: Измаил.'
+      en: Motor vessel ANATOLII HANKEVYCH. Signed on in Izmail.
+  - dates:
+      ru: 02.2025 – 06.2026
+      en: ''
+    title:
+      ru: Капитан · «НИБУЛОН» (Nibulon Ltd)
+      en: Captain · Nibulon Ltd
+    text:
+      ru: 'Теплоход «Nibulon-3». Два контракта: 01.02.2025 – 15.08.2025 (приём на судно в Николаеве) и 01.11.2025 – 30.06.2026 (приём на судно в Одессе).'
+      en: 'Motor vessel Nibulon-3. Two contracts: 01.02.2025 – 15.08.2025 (signed on in Mykolaiv) and 01.11.2025 – 30.06.2026 (signed on in Odesa).'
+  - dates:
+      ru: 06.2024 – 12.2024
+      en: ''
+    title:
+      ru: Капитан · Warden Chartering s.r.o.
+      en: Captain · Warden Chartering s.r.o.
+    text:
+      ru: 'Теплоход «MILLENNIUM FALCON». Два контракта: 01.06.2024 – 30.09.2024 и 16.10.2024 – 25.12.2024. Приём на судно: Измаил.'
+      en: 'Motor vessel MILLENNIUM FALCON. Two contracts: 01.06.2024 – 30.09.2024 and 16.10.2024 – 25.12.2024. Signed on in Izmail.'
+  - dates:
+      ru: '05.2024'
+      en: ''
+    title:
+      ru: Капитан · Kent Steam Shipping Co.
+      en: Captain · Kent Steam Shipping Co.
+    text:
+      ru: 'Танкер «UBC AVILOVA». 13.05.2024 – 31.05.2024. Приём на судно: Измаил.'
+      en: Tanker UBC AVILOVA. 13.05.2024 – 31.05.2024. Signed on in Izmail.
+  - dates:
+      ru: 06.2022 – 03.2024
+      en: ''
+    title:
+      ru: Капитан · «Pelargus KFT»
+      en: Captain · Pelargus KFT
+    text:
+      ru: 'Танкер-продуктовоз «ANTOIL-4». Район плавания: река Дунай.'
+      en: 'Product tanker ANTOIL-4. Sailing area: the Danube.'
+  - dates:
+      ru: 01.2018 – 02.2022
+      en: ''
+    title:
+      ru: Капитан · «Грейн-Трансшипмент»
+      en: Captain · Grain-Transshipment
+    text:
+      ru: 'Буксир-толкач «PLUTUS». Районы плавания: Днепр, Южный Буг, северо-западная часть Чёрного моря (порты Очаков, Одесса, Черноморск, Южный), река Дунай.'
+      en: 'Pusher tug PLUTUS. Sailing areas: Dnipro, Southern Bug, north-western Black Sea (ports of Ochakiv, Odesa, Chornomorsk, Pivdennyi), the Danube.'
+  - dates:
+      ru: 04.2017 – 01.2018
+      en: ''
+    title:
+      ru: Капитан · «Грейн-Трансшипмент»
+      en: Captain · Grain-Transshipment
+    text:
+      ru: 'Буксир-толкач «БТ-418». Районы плавания: Днепр, Южный Буг, северо-западная часть Чёрного моря (порты Очаков, Николаев, Херсон).'
+      en: 'Pusher tug BT-418. Sailing areas: Dnipro, Southern Bug, north-western Black Sea (ports of Ochakiv, Mykolaiv, Kherson).'
+  - dates:
+      ru: 05.2016 – 11.2016
+      en: ''
+    title:
+      ru: Старший помощник капитана · «БлэкСиШиппинг», Одесса
+      en: Chief Mate · BlackSeaShipping, Odesa
+    text:
+      ru: 'Линейный буксир «Виктори». Районы плавания: Южный Буг, северо-западная часть Чёрного моря (порты Очаков, Одесса, Черноморск, Южный).'
+      en: 'Line tug Viktori. Sailing areas: Southern Bug, north-western Black Sea (ports of Ochakiv, Odesa, Chornomorsk, Pivdennyi).'
+  - dates:
+      ru: 08.2015 – 05.2016
+      en: ''
+    title:
+      ru: Сменный капитан · «Вик-Ойл», Николаев
+      en: Relief Captain · Vik-Oil, Mykolaiv
+    text:
+      ru: 'Буксир-толкач «БТ-438». Районы плавания: Днепр, Южный Буг, северо-западная часть Чёрного моря (порты Очаков, Николаев, Херсон).'
+      en: 'Pusher tug BT-438. Sailing areas: Dnipro, Southern Bug, north-western Black Sea (ports of Ochakiv, Mykolaiv, Kherson).'
+vessels_section:
+  eyebrow:
+    ru: Флот
+    en: Fleet
+  heading:
+    ru: Мои суда
+    en: My vessels
+  subtitle:
+    ru: Нажмите на карточку, чтобы открыть страницу судна.
+    en: Click a card to open the vessel page.
+skills:
+  eyebrow:
+    ru: Навыки
+    en: Skills
+  heading:
+    ru: Навыки и качества
+    en: Skills & qualities
+  professional:
+    title:
+      ru: Профессиональные навыки
+      en: Professional skills
+    items:
+    - ru: Управление судном
+      en: Ship handling
+    - ru: Руководство экипажем и взаимодействие с людьми
+      en: Crew leadership and working with people
+    - ru: Принятие решений
+      en: Decision-making
+    - ru: Профессионализм
+      en: Professionalism
+    - ru: Креативность
+      en: Creativity
+  qualities:
+    title:
+      ru: Личные качества
+      en: Personal qualities
+    items:
+    - ru: коммуникабельный
+      en: communicative
+    - ru: ответственный
+      en: responsible
+    - ru: требовательный
+      en: demanding
+    - ru: стрессоустойчивый
+      en: stress-resistant
+    - ru: внимательный
+      en: attentive
+    - ru: уверенный
+      en: confident
+    - ru: порядочный
+      en: honest
+  languages:
+    title:
+      ru: Языки
+      en: Languages
+    items:
+    - ru: Украинский
+      en: Ukrainian
+    - ru: Английский
+      en: English
+    - ru: Русский
+      en: Russian
+  hobby:
+    title:
+      ru: Хобби
+      en: Hobby
+    items:
+    - ru: Спорт
+      en: Sport
+route:
+  eyebrow:
+    ru: Районы плавания
+    en: Sailing areas
+  heading:
+    ru: Дунай, Днепр, Южный Буг и северо-запад Чёрного моря
+    en: Danube, Dnipro, Southern Bug and the north-western Black Sea
+  subtitle:
+    ru: Реки и порты, где я работал капитаном и старшим помощником.
+    en: Rivers and ports where I have worked as captain and chief mate.
+  areas:
+  - name:
+      ru: Дунай
+      en: Danube
+    ports:
+      ru: Измаил
+      en: Izmail
+  - name:
+      ru: Днепр
+      en: Dnipro
+    ports:
+      ru: Херсон
+      en: Kherson
+  - name:
+      ru: Южный Буг
+      en: Southern Bug
+    ports:
+      ru: Николаев
+      en: Mykolaiv
+  - name:
+      ru: Северо-запад Чёрного моря
+      en: North-western Black Sea
+    ports:
+      ru: Очаков, Одесса, Черноморск, Южный
+      en: Ochakiv, Odesa, Chornomorsk, Pivdennyi
+  caption:
+    ru: Схема условная, не в масштабе.
+    en: Schematic, not to scale.
+contact:
+  eyebrow:
+    ru: Контакты
+    en: Contact
+  heading:
+    ru: Связаться со мной
+    en: Get in touch
+  text:
+    ru: По вопросам работы пишите на почту.
+    en: For work enquiries, please write to my email.
+  socials:
+  - name: Telegram
+    url: '#'
+    handle:
+      ru: '[@username]'
+      en: ''
+  - name: LinkedIn
+    url: '#'
+    handle:
+      ru: '[профиль]'
+      en: ''
+  - name: Facebook
+    url: '#'
+    handle:
+      ru: '[профиль]'
+      en: ''
+  - name: Instagram
+    url: '#'
+    handle:
+      ru: '[@username]'
+      en: ''

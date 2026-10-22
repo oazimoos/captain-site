@@ -1,0 +1,36 @@
+# Судно. order — место в карусели (меньше = раньше). note — служебная заметка, на сайте не показывается.
+order: 80
+slug: vyktory
+name: Виктори
+name_en: VYKTORY
+type:
+  ru: линейный буксир
+  en: line tug
+company:
+  ru: «БлэкСиШиппинг», Одесса
+  en: BlackSeaShipping, Odesa
+position:
+  ru: Старший помощник капитана
+  en: Chief Mate
+period:
+  ru: 05.2016 – 11.2016
+  en: ''
+contracts:
+- dates:
+    ru: 17.05.2016 – 17.11.2016
+    en: ''
+  port:
+    ru: ''
+    en: ''
+area:
+  ru: Южный Буг, северо-западная часть Чёрного моря (порты Очаков, Одесса, Черноморск, Южный)
+  en: Southern Bug, north-western Black Sea (ports of Ochakiv, Odesa, Chornomorsk, Pivdennyi)
+photo: /images/vessels/vyktory.jpg
+thumb_pos: ''
+marking:
+  ru: номер 6925446
+  en: number 6925446
+description:
+  ru: '[Описание судна, по желанию]'
+  en: '[Vessel description, optional]'
+note: ''

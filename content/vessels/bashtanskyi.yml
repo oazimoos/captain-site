@@ -1,0 +1,36 @@
+# Судно. order — место в карусели (меньше = раньше). note — служебная заметка, на сайте не показывается.
+order: 100
+slug: bashtanskyi
+name: БАШТАНСЬКИЙ
+name_en: BASHTANSKYI
+type:
+  ru: буксир
+  en: tug
+company:
+  ru: '[компания]'
+  en: '[company]'
+position:
+  ru: '[должность]'
+  en: '[position]'
+period:
+  ru: '[период]'
+  en: '[period]'
+contracts:
+- dates:
+    ru: '[период]'
+    en: '[period]'
+  port:
+    ru: ''
+    en: ''
+area:
+  ru: река Южный Буг, северо-западная часть Чёрного моря
+  en: Southern Bug River, north-western Black Sea
+photo: /images/vessels/bashtanskyi.jpg
+thumb_pos: ''
+marking:
+  ru: ''
+  en: ''
+description:
+  ru: '[Описание судна, по желанию]'
+  en: '[Vessel description, optional]'
+note: 'Не подтверждено: на фото видно NIBULON. Заполните компанию, должность, период и контракты; затем поменяйте order.'

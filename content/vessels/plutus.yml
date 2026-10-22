@@ -1,0 +1,36 @@
+# Судно. order — место в карусели (меньше = раньше). note — служебная заметка, на сайте не показывается.
+order: 60
+slug: plutus
+name: PLUTUS
+name_en: ''
+type:
+  ru: буксир-толкач
+  en: pusher tug
+company:
+  ru: «Грейн-Трансшипмент»
+  en: Grain-Transshipment
+position:
+  ru: Капитан
+  en: Captain
+period:
+  ru: 01.2018 – 02.2022
+  en: ''
+contracts:
+- dates:
+    ru: 01.01.2018 – 24.02.2022
+    en: ''
+  port:
+    ru: ''
+    en: ''
+area:
+  ru: Днепр, Южный Буг, северо-западная часть Чёрного моря (порты Очаков, Одесса, Черноморск, Южный), река Дунай
+  en: Dnipro, Southern Bug, north-western Black Sea (ports of Ochakiv, Odesa, Chornomorsk, Pivdennyi), the Danube
+photo: /images/vessels/plutus.jpg
+thumb_pos: ''
+marking:
+  ru: ''
+  en: ''
+description:
+  ru: '[Описание судна, по желанию]'
+  en: '[Vessel description, optional]'
+note: ''

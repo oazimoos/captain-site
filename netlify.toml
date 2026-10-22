@@ -1,0 +1,13 @@
+# Netlify: сборка статического сайта из content/*.yml
+[build]
+  command = "pip install -r requirements.txt && python3 build.py"
+  publish = "dist"
+
+[build.environment]
+  PYTHON_VERSION = "3.13"
+
+# Админка не должна индексироваться
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"

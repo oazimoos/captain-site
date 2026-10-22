@@ -1,0 +1,36 @@
+# Судно. order — место в карусели (меньше = раньше). note — служебная заметка, на сайте не показывается.
+order: 70
+slug: bt-418
+name: БТ-418
+name_en: BT-418
+type:
+  ru: буксир-толкач
+  en: pusher tug
+company:
+  ru: «Грейн-Трансшипмент»
+  en: Grain-Transshipment
+position:
+  ru: Капитан
+  en: Captain
+period:
+  ru: 04.2017 – 01.2018
+  en: ''
+contracts:
+- dates:
+    ru: 25.04.2017 – 01.01.2018
+    en: ''
+  port:
+    ru: ''
+    en: ''
+area:
+  ru: Днепр, Южный Буг, северо-западная часть Чёрного моря (порты Очаков, Николаев, Херсон)
+  en: Dnipro, Southern Bug, north-western Black Sea (ports of Ochakiv, Mykolaiv, Kherson)
+photo: /images/vessels/bt-418.jpg
+thumb_pos: ''
+marking:
+  ru: ''
+  en: ''
+description:
+  ru: '[Описание судна, по желанию]'
+  en: '[Vessel description, optional]'
+note: ''
