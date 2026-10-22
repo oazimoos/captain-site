@@ -248,3 +248,16 @@ body.lb-open{overflow:hidden}
 .route figcaption{display:none}@media (min-width:700px){.route figcaption{display:block}}
 /* Заглушки «[ ... ]» в данных о судах: заметно, но ненавязчиво */
 .ph{font-style:italic;opacity:.65;letter-spacing:.01em}
+
+/* ===== Профессиональные качества (карточки «заголовок + описание») ===== */
+.skills{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.qualities{margin-top:2.6rem}
+.qualities__title{color:var(--navy);font-size:1.35rem;margin-bottom:1.2rem}
+.qualities__grid{list-style:none;margin:0;padding:0;display:grid;gap:1.1rem;grid-template-columns:1fr}
+@media (min-width:640px){.qualities__grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1000px){.qualities__grid{grid-template-columns:repeat(3,1fr)}}
+.quality{position:relative;background:var(--white);border-radius:var(--radius);padding:1.4rem 1.4rem 1.3rem 1.4rem;box-shadow:var(--shadow);border-top:3px solid var(--gold);transition:transform .25s,box-shadow .25s}
+.quality:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(11,29,58,.16)}
+.quality__num{display:block;font-family:var(--serif);font-weight:700;font-size:1.6rem;line-height:1;color:var(--gold);margin-bottom:.6rem}
+.quality__title{font-family:var(--serif);font-size:1.15rem;color:var(--navy);margin:0 0 .45rem}
+.quality__text{margin:0;color:var(--muted);font-size:.95rem;line-height:1.55}

@@ -256,23 +256,45 @@ skills:
       en: Creativity
   qualities:
     title:
-      ru: Личные качества
-      en: Personal qualities
+      ru: Профессиональные качества
+      en: Professional qualities
     items:
-    - ru: коммуникабельный
-      en: communicative
-    - ru: ответственный
-      en: responsible
-    - ru: требовательный
-      en: demanding
-    - ru: стрессоустойчивый
-      en: stress-resistant
-    - ru: внимательный
-      en: attentive
-    - ru: уверенный
-      en: confident
-    - ru: порядочный
-      en: honest
+    - title:
+        ru: Лидерство
+        en: Leadership
+      description:
+        ru: Способность эффективно руководить экипажем и организовывать его работу.
+        en: The ability to lead the crew effectively and organise its work.
+    - title:
+        ru: Решительность
+        en: Decisiveness
+      description:
+        ru: Способность своевременно принимать обоснованные решения в сложных ситуациях.
+        en: The ability to make well-founded decisions promptly in difficult situations.
+    - title:
+        ru: Стрессоустойчивость
+        en: Stress resilience
+      description:
+        ru: Умение сохранять самообладание в условиях повышенной нагрузки и чрезвычайных ситуаций.
+        en: Keeping composure under heavy workload and in emergencies.
+    - title:
+        ru: Организаторские способности
+        en: Organisational skills
+      description:
+        ru: Умение планировать работу и распределять обязанности между членами экипажа.
+        en: Planning work and allocating duties among crew members.
+    - title:
+        ru: Коммуникабельность
+        en: Communication skills
+      description:
+        ru: Способность эффективно взаимодействовать с экипажем, портовыми службами и береговыми организациями.
+        en: The ability to work effectively with the crew, port services and shore-based organisations.
+    - title:
+        ru: Аналитическое мышление
+        en: Analytical thinking
+      description:
+        ru: Умение оценивать навигационную обстановку, прогнозировать риски и выбирать оптимальные решения.
+        en: Assessing the navigational situation, anticipating risks and choosing the best course of action.
   languages:
     title:
       ru: Языки

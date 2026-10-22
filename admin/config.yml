@@ -149,12 +149,18 @@ collections:
                 fields:
                   - { label: 'Заголовок', name: title, widget: object, fields: *ru_en_string }
                   - { label: 'Пункты', name: items, widget: list, fields: *ru_en_string }
-              - label: 'Личные качества'
+              - label: 'Профессиональные качества'
                 name: qualities
                 widget: object
                 fields:
                   - { label: 'Заголовок', name: title, widget: object, fields: *ru_en_string }
-                  - { label: 'Пункты', name: items, widget: list, fields: *ru_en_string }
+                  - label: 'Качества'
+                    name: items
+                    widget: list
+                    summary: '{{fields.title.ru}}'
+                    fields:
+                      - { label: 'Название', name: title, widget: object, fields: *ru_en_string }
+                      - { label: 'Описание', name: description, widget: object, fields: *ru_en_text }
               - label: 'Языки'
                 name: languages
                 widget: object

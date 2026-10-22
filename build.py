@@ -172,10 +172,34 @@ def render_index():
               </div>
             </a>''')
 
+    def render_qualities(block):
+        """Профессиональные качества: карточки «заголовок + описание».
+        Поддерживает и старый формат (простые строки ru/en)."""
+        if not block or not block.get('items'):
+            return ''
+        cards = []
+        for n, it in enumerate(block['items'], 1):
+            if isinstance(it, dict) and 'title' in it:
+                title, desc = it['title'], it.get('description')
+            else:
+                title, desc = it, None
+            d = f'\n              {T(desc, "p", "quality__text")}' if ru(desc) else ''
+            cards.append(f'''            <li class="quality reveal">
+              <span class="quality__num" aria-hidden="true">{n:02d}</span>
+              {T(title, 'h4', 'quality__title')}{d}
+            </li>''')
+        return (f'''        <div class="qualities">
+          {T(block['title'], 'h3', 'qualities__title reveal')}
+          <ul class="qualities__grid">
+''' + '\n'.join(cards) + '''
+          </ul>
+        </div>''')
+
     def skill_list(block, cls=''):
         c = f' class="{cls}"' if cls else ''
         return f'<ul{c}>\n' + '\n'.join(f'              {T(i, "li")}' for i in block['items']) + '\n            </ul>'
 
+    qualities_html = render_qualities(S.get('qualities'))
     areas = '\n'.join(f'            <li>{T(a["name"], "strong")} · {T(a.get("ports"))}</li>' for a in R['areas'])
     route_map = open(os.path.join(ROOT, 'templates', 'route-map.html'), encoding='utf-8').read()
     route_map = re.sub(r'^<!--.*?-->\n', '', route_map, flags=re.S).rstrip('\n')
@@ -300,16 +324,13 @@ def render_index():
             {skill_list(S['professional'])}
           </div>
           <div class="skill reveal">
-            {T(S['qualities']['title'], 'h3')}
-            {skill_list(S['qualities'], 'tags')}
-          </div>
-          <div class="skill reveal">
             {T(S['languages']['title'], 'h3')}
             {skill_list(S['languages'])}
             {T(S['hobby']['title'], 'h3', 'skill__h2')}
             {skill_list(S['hobby'])}
           </div>
         </div>
+{qualities_html}
       </div>
     </section>
 
