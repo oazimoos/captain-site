@@ -241,7 +241,7 @@ def render_index():
           </div>
         </div>
         <div class="hero__photo reveal">
-          <img src="{esc(img_path(P['photo'], ''))}" alt="{esc(ru(P['name']))}" class="photo" width="207" height="281">
+          <img src="{esc(img_path(P['photo'], ''))}" alt="{esc(ru(P['name']))}" class="photo" width="600" height="798">
         </div>
       </div>
     </section>
