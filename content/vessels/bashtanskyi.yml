@@ -19,9 +19,6 @@ contracts:
 - dates:
     ru: '[период]'
     en: '[period]'
-  port:
-    ru: ''
-    en: ''
 area:
   ru: река Южный Буг, северо-западная часть Чёрного моря
   en: Southern Bug River, north-western Black Sea

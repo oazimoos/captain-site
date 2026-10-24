@@ -123,11 +123,14 @@ collections:
               - label: 'Должности (новые сверху)'
                 name: items
                 widget: list
-                summary: '{{fields.dates.ru}} — {{fields.title.ru}}'
+                summary: '{{fields.dates.ru}} — {{fields.position.ru}} · {{fields.vessel.ru}}'
                 fields:
                   - { label: 'Даты', name: dates, widget: object, fields: *ru_en_string }
-                  - { label: 'Должность · компания', name: title, widget: object, fields: *ru_en_string }
-                  - { label: 'Описание', name: text, widget: object, fields: *ru_en_text }
+                  - { label: 'Должность', name: position, widget: object, fields: *ru_en_string }
+                  - { label: 'Тип судна (с заглавной: «Буксир-толкач»)', name: vessel_type, widget: object, fields: *ru_en_string }
+                  - { label: 'Название судна (RU — без кавычек, «» добавятся сами)', name: vessel, widget: object, fields: *ru_en_string }
+                  - { label: 'Компания', name: company, widget: object, fields: *ru_en_string }
+                  - { label: 'Подробности (контракты, районы плавания) — необязательно', name: details, widget: object, required: false, fields: &ru_en_optional_text [ { label: 'RU', name: ru, widget: text, required: false }, { label: 'EN (пусто = как RU)', name: en, widget: text, required: false } ] }
           - label: 'Раздел «Мои суда» (заголовки)'
             name: vessels_section
             widget: object
@@ -236,7 +239,6 @@ collections:
         summary: '{{fields.dates.ru}}'
         fields:
           - { label: 'Даты', name: dates, widget: object, fields: *ru_en_string }
-          - { label: 'Порт приёма на судно', name: port, widget: object, fields: *ru_en_optional }
       - { label: 'Район плавания', name: area, widget: object, fields: *ru_en_string }
       - { label: 'Фото', name: photo, widget: image, hint: 'Горизонтальное, ~1600 px по ширине, до ~400 КБ' }
       - { label: 'Кадрирование карточки', name: thumb_pos, widget: string, required: false, hint: 'CSS object-position, например «90% 50%» — показать правую часть фото' }

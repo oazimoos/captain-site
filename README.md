@@ -46,7 +46,7 @@ python3 -m http.server -d dist 8000   # открыть http://localhost:8000
 | `slug` | адрес страницы: `plutus` → `vessels/plutus.html` (латиница, цифры, дефис) |
 | `name`, `name_en` | название RU / EN |
 | `type`, `company`, `position`, `period` | тип, компания, должность, краткий период для карточки |
-| `contracts` | список контрактов: `dates` (точные даты), `port` (порт приёма на судно, можно пусто) |
+| `contracts` | список контрактов: `dates` (точные даты) |
 | `area` | район плавания |
 | `photo` | `/images/vessels/<файл>.jpg` (≈1600 px по ширине, до ~400 КБ) |
 | `thumb_pos` | кадрирование карточки, CSS `object-position`, напр. `90% 50%` |

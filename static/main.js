@@ -24,7 +24,6 @@ var EN = {
   "vp.period": "Period",
   "vp.periods": "Periods of service",
   "vp.area": "Sailing area",
-  "vp.engaged": "signed on in:",
   "vp.marking": "Hull markings (from photo)",
   "vp.more": "Details →",
   "vp.back": "← All vessels",

@@ -148,86 +148,167 @@ experience:
     en: Work experience
   items:
   - dates:
-      ru: 08.2026 – наст. время
-      en: 08.2026 – present
-    title:
-      ru: Капитан · «НИБУЛОН» (Nibulon Ltd)
-      en: Captain · Nibulon Ltd
-    text:
-      ru: 'Буксир-толкач «ANATOLII HANKEVYCH». Приём на судно: Измаил.'
-      en: Pusher tug ANATOLII HANKEVYCH. Signed on in Izmail.
-  - dates:
-      ru: 02.2025 – 06.2026
+      ru: '08.2026 – наст. время'
+      en: '08.2026 – present'
+    position:
+      ru: 'Капитан'
+      en: 'Captain'
+    vessel_type:
+      ru: 'Буксир-толкач'
+      en: 'Pusher tug'
+    vessel:
+      ru: 'ANATOLII HANKEVYCH'
       en: ''
-    title:
-      ru: Капитан · «НИБУЛОН» (Nibulon Ltd)
-      en: Captain · Nibulon Ltd
-    text:
-      ru: 'Теплоход «Nibulon-3». Два контракта: 01.02.2025 – 15.08.2025 (приём на судно в Николаеве) и 01.11.2025 – 30.06.2026 (приём на судно в Одессе).'
-      en: 'Motor vessel Nibulon-3. Two contracts: 01.02.2025 – 15.08.2025 (signed on in Mykolaiv) and 01.11.2025 – 30.06.2026 (signed on in Odesa).'
-  - dates:
-      ru: 06.2024 – 12.2024
+    company:
+      ru: '«НИБУЛОН» (Nibulon Ltd)'
+      en: 'Nibulon Ltd'
+    details:
+      ru: ''
       en: ''
-    title:
-      ru: Капитан · Warden Chartering s.r.o.
-      en: Captain · Warden Chartering s.r.o.
-    text:
-      ru: 'Теплоход «MILLENNIUM FALCON». Два контракта: 01.06.2024 – 30.09.2024 и 16.10.2024 – 25.12.2024. Приём на судно: Измаил.'
-      en: 'Motor vessel MILLENNIUM FALCON. Two contracts: 01.06.2024 – 30.09.2024 and 16.10.2024 – 25.12.2024. Signed on in Izmail.'
+  - dates:
+      ru: '02.2025 – 06.2026'
+      en: ''
+    position:
+      ru: 'Капитан'
+      en: 'Captain'
+    vessel_type:
+      ru: 'Теплоход'
+      en: 'Motor vessel'
+    vessel:
+      ru: 'Nibulon-3'
+      en: ''
+    company:
+      ru: '«НИБУЛОН» (Nibulon Ltd)'
+      en: 'Nibulon Ltd'
+    details:
+      ru: 'Два контракта: 01.02.2025 – 15.08.2025 и 01.11.2025 – 30.06.2026.'
+      en: 'Two contracts: 01.02.2025 – 15.08.2025 and 01.11.2025 – 30.06.2026.'
+  - dates:
+      ru: '06.2024 – 12.2024'
+      en: ''
+    position:
+      ru: 'Капитан'
+      en: 'Captain'
+    vessel_type:
+      ru: 'Теплоход'
+      en: 'Motor vessel'
+    vessel:
+      ru: 'MILLENNIUM FALCON'
+      en: ''
+    company:
+      ru: 'Warden Chartering s.r.o.'
+      en: ''
+    details:
+      ru: 'Два контракта: 01.06.2024 – 30.09.2024 и 16.10.2024 – 25.12.2024.'
+      en: 'Two contracts: 01.06.2024 – 30.09.2024 and 16.10.2024 – 25.12.2024.'
   - dates:
       ru: '05.2024'
       en: ''
-    title:
-      ru: Капитан · Kent Steam Shipping Co.
-      en: Captain · Kent Steam Shipping Co.
-    text:
-      ru: 'Танкер «UBC AVILOVA». 13.05.2024 – 31.05.2024. Приём на судно: Измаил.'
-      en: Tanker UBC AVILOVA. 13.05.2024 – 31.05.2024. Signed on in Izmail.
-  - dates:
-      ru: 06.2022 – 03.2024
+    position:
+      ru: 'Капитан'
+      en: 'Captain'
+    vessel_type:
+      ru: 'Танкер'
+      en: 'Tanker'
+    vessel:
+      ru: 'UBC AVILOVA'
       en: ''
-    title:
-      ru: Капитан · «Pelargus KFT»
-      en: Captain · Pelargus KFT
-    text:
-      ru: 'Танкер-продуктовоз «ANTOIL-4». Район плавания: река Дунай.'
-      en: 'Product tanker ANTOIL-4. Sailing area: the Danube.'
-  - dates:
-      ru: 01.2018 – 02.2022
+    company:
+      ru: 'Kent Steam Shipping Co.'
       en: ''
-    title:
-      ru: Капитан · «Грейн-Трансшипмент»
-      en: Captain · Grain-Transshipment
-    text:
-      ru: 'Буксир-толкач «PLUTUS». Районы плавания: Днепр, Южный Буг, северо-западная часть Чёрного моря (порты Очаков, Одесса, Черноморск, Южный), река Дунай.'
-      en: 'Pusher tug PLUTUS. Sailing areas: Dnipro, Southern Bug, north-western Black Sea (ports of Ochakiv, Odesa, Chornomorsk, Pivdennyi), the Danube.'
-  - dates:
-      ru: 04.2017 – 01.2018
+    details:
+      ru: '13.05.2024 – 31.05.2024.'
       en: ''
-    title:
-      ru: Капитан · «Грейн-Трансшипмент»
-      en: Captain · Grain-Transshipment
-    text:
-      ru: 'Буксир-толкач «БТ-418». Районы плавания: Днепр, Южный Буг, северо-западная часть Чёрного моря (порты Очаков, Николаев, Херсон).'
-      en: 'Pusher tug BT-418. Sailing areas: Dnipro, Southern Bug, north-western Black Sea (ports of Ochakiv, Mykolaiv, Kherson).'
   - dates:
-      ru: 05.2016 – 11.2016
+      ru: '06.2022 – 03.2024'
       en: ''
-    title:
-      ru: Старший помощник капитана · «БлэкСиШиппинг», Одесса
-      en: Chief Mate · BlackSeaShipping, Odesa
-    text:
-      ru: 'Линейный буксир «Виктори». Районы плавания: Южный Буг, северо-западная часть Чёрного моря (порты Очаков, Одесса, Черноморск, Южный).'
-      en: 'Line tug Viktori. Sailing areas: Southern Bug, north-western Black Sea (ports of Ochakiv, Odesa, Chornomorsk, Pivdennyi).'
+    position:
+      ru: 'Капитан'
+      en: 'Captain'
+    vessel_type:
+      ru: 'Танкер-продуктовоз'
+      en: 'Product tanker'
+    vessel:
+      ru: 'ANTOIL-4'
+      en: ''
+    company:
+      ru: '«Pelargus KFT»'
+      en: 'Pelargus KFT'
+    details:
+      ru: 'Район плавания: река Дунай.'
+      en: 'Sailing area: the Danube.'
   - dates:
-      ru: 08.2015 – 05.2016
+      ru: '01.2018 – 02.2022'
       en: ''
-    title:
-      ru: Сменный капитан · «Вик-Ойл», Николаев
-      en: Relief Captain · Vik-Oil, Mykolaiv
-    text:
-      ru: 'Буксир-толкач «БТ-438». Районы плавания: Днепр, Южный Буг, северо-западная часть Чёрного моря (порты Очаков, Николаев, Херсон).'
-      en: 'Pusher tug BT-438. Sailing areas: Dnipro, Southern Bug, north-western Black Sea (ports of Ochakiv, Mykolaiv, Kherson).'
+    position:
+      ru: 'Капитан'
+      en: 'Captain'
+    vessel_type:
+      ru: 'Буксир-толкач'
+      en: 'Pusher tug'
+    vessel:
+      ru: 'PLUTUS'
+      en: ''
+    company:
+      ru: '«Грейн-Трансшипмент»'
+      en: 'Grain-Transshipment'
+    details:
+      ru: 'Районы плавания: Днепр, Южный Буг, северо-западная часть Чёрного моря (порты Очаков, Одесса, Черноморск, Южный), река Дунай.'
+      en: 'Sailing areas: Dnipro, Southern Bug, north-western Black Sea (ports of Ochakiv, Odesa, Chornomorsk, Pivdennyi), the Danube.'
+  - dates:
+      ru: '04.2017 – 01.2018'
+      en: ''
+    position:
+      ru: 'Капитан'
+      en: 'Captain'
+    vessel_type:
+      ru: 'Буксир-толкач'
+      en: 'Pusher tug'
+    vessel:
+      ru: 'БТ-418'
+      en: 'BT-418'
+    company:
+      ru: '«Грейн-Трансшипмент»'
+      en: 'Grain-Transshipment'
+    details:
+      ru: 'Районы плавания: Днепр, Южный Буг, северо-западная часть Чёрного моря (порты Очаков, Николаев, Херсон).'
+      en: 'Sailing areas: Dnipro, Southern Bug, north-western Black Sea (ports of Ochakiv, Mykolaiv, Kherson).'
+  - dates:
+      ru: '05.2016 – 11.2016'
+      en: ''
+    position:
+      ru: 'Старший помощник капитана'
+      en: 'Chief Mate'
+    vessel_type:
+      ru: 'Линейный буксир'
+      en: 'Line tug'
+    vessel:
+      ru: 'Виктори'
+      en: 'Viktori'
+    company:
+      ru: '«БлэкСиШиппинг», Одесса'
+      en: 'BlackSeaShipping, Odesa'
+    details:
+      ru: 'Районы плавания: Южный Буг, северо-западная часть Чёрного моря (порты Очаков, Одесса, Черноморск, Южный).'
+      en: 'Sailing areas: Southern Bug, north-western Black Sea (ports of Ochakiv, Odesa, Chornomorsk, Pivdennyi).'
+  - dates:
+      ru: '08.2015 – 05.2016'
+      en: ''
+    position:
+      ru: 'Сменный капитан'
+      en: 'Relief Captain'
+    vessel_type:
+      ru: 'Буксир-толкач'
+      en: 'Pusher tug'
+    vessel:
+      ru: 'БТ-438'
+      en: 'BT-438'
+    company:
+      ru: '«Вик-Ойл», Николаев'
+      en: 'Vik-Oil, Mykolaiv'
+    details:
+      ru: 'Районы плавания: Днепр, Южный Буг, северо-западная часть Чёрного моря (порты Очаков, Николаев, Херсон).'
+      en: 'Sailing areas: Dnipro, Southern Bug, north-western Black Sea (ports of Ochakiv, Mykolaiv, Kherson).'
 vessels_section:
   eyebrow:
     ru: Флот

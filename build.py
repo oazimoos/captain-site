@@ -147,11 +147,27 @@ def render_index():
             {T(cert['text'], 'p')}
           </article>''')
 
-    tl = '\n'.join(f'''          <li class="timeline__item reveal">
-            {T(it['dates'], 'span', 'timeline__date')}
-            {T(it['title'], 'h3')}
-            {T(it['text'], 'p')}
-          </li>''' for it in X['items'])
+    def exp_item(it):
+        """Строка опыта: «Должность · Тип судна «Название»», ниже компания, ниже детали.
+        Старый формат (title/text) тоже поддерживается."""
+        if 'position' not in it:
+            head, comp, det = it.get('title'), None, it.get('text')
+        else:
+            pr, pe = ru(it['position']), en(it['position']) or ru(it['position'])
+            tr, te = ru(it.get('vessel_type')), en(it.get('vessel_type')) or ru(it.get('vessel_type'))
+            nr, ne = ru(it.get('vessel')), en(it.get('vessel')) or ru(it.get('vessel'))
+            vr = ' '.join(x for x in [tr, f'«{nr}»' if nr else ''] if x)
+            ve = ' '.join(x for x in [te, ne] if x)
+            head = {'ru': ' · '.join(x for x in [pr, vr] if x), 'en': ' · '.join(x for x in [pe, ve] if x)}
+            comp, det = it.get('company'), it.get('details')
+        parts = [T(it['dates'], 'span', 'timeline__date'), T(head, 'h3')]
+        if ru(comp):
+            parts.append(T(comp, 'p', 'timeline__company'))
+        if ru(det):
+            parts.append(T(det, 'p', 'timeline__details'))
+        return '          <li class="timeline__item reveal">\n            ' + '\n            '.join(parts) + '\n          </li>'
+
+    tl = '\n'.join(exp_item(it) for it in X['items'])
 
     slides = []
     for v in vessels:
@@ -392,10 +408,7 @@ def render_vessel(i, v):
 
     contracts = []
     for c in v.get('contracts') or []:
-        port = ''
-        if ru(c.get('port')):
-            port = f' <span class="contract__port">· <span data-i18n="vp.engaged">приём на судно:</span> {T(c["port"])}</span>'
-        contracts.append(f'                  <li>{T(c["dates"])}{port}</li>')
+        contracts.append(f'                  <li>{T(c["dates"])}</li>')
     rows = [
         f'<div><dt data-i18n="vp.type">Тип</dt><dd>{T(v["type"])}</dd></div>',
         f'<div><dt data-i18n="vp.company">Судовладелец / компания</dt><dd>{T(v.get("company"))}</dd></div>',

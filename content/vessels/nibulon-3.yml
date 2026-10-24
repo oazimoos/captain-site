@@ -19,15 +19,9 @@ contracts:
 - dates:
     ru: 01.02.2025 – 15.08.2025
     en: ''
-  port:
-    ru: Николаев
-    en: Mykolaiv
 - dates:
     ru: 01.11.2025 – 30.06.2026
     en: ''
-  port:
-    ru: Одесса
-    en: Odesa
 area:
   ru: река Дунай
   en: the Danube River

@@ -19,9 +19,6 @@ contracts:
 - dates:
     ru: 15.08.2026 – наст. время
     en: 15.08.2026 – present
-  port:
-    ru: Измаил
-    en: Izmail
 area:
   ru: река Дунай
   en: the Danube River
