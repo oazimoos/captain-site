@@ -51,11 +51,11 @@ hero:
     ru: Портфолио
     en: Portfolio
   title:
-    ru: Капитан теплоходов, танкеров и буксиров · Дунай и внутренние водные пути Украины
-    en: Captain of motor vessels, tankers and tugs · Danube & Ukrainian inland waterways
+    ru: Капитан речных, портовых судов и судов прибрежного плавания
+    en: Master of river, harbour and coastal vessels
   lead:
-    ru: 'Сейчас — капитан теплохода «ANATOLII HANKEVYCH» в компании «НИБУЛОН». На флоте с 2015 года: теплоходы, танкеры и буксиры-толкачи на Дунае, Днепре, Южном Буге и в северо-западной части Чёрного моря.'
-    en: 'Currently captain of the motor vessel ANATOLII HANKEVYCH at Nibulon. In the fleet since 2015: motor vessels, tankers and pusher tugs on the Danube, Dnipro, Southern Bug and in the north-western Black Sea.'
+    ru: 'Сейчас — капитан теплохода «ANATOLII HANKEVYCH» в компании «НИБУЛОН». На флоте с 2010 года, капитаном с 2016-го: теплоходы, танкеры и буксиры-толкачи на Дунае, Днепре, Южном Буге и в северо-западной части Чёрного моря.'
+    en: 'Currently captain of the motor vessel ANATOLII HANKEVYCH at Nibulon. At sea since 2010 and a captain since 2016: motor vessels, tankers and pusher tugs on the Danube, Dnipro, Southern Bug and in the north-western Black Sea.'
   cta_contact:
     ru: Связаться
     en: Get in touch
@@ -70,17 +70,23 @@ about:
     ru: Капитан с опытом на реках и в море
     en: A captain with river and sea experience
   paragraphs:
-  - ru: 'С 2015 года работаю на флоте: сменным капитаном, старшим помощником капитана и капитаном буксиров-толкачей, линейного буксира, танкеров и теплоходов. С 08.2026 — капитан теплохода «ANATOLII HANKEVYCH» в компании «НИБУЛОН».'
-    en: 'I have worked in the fleet since 2015: as relief captain, chief mate, and captain of pusher tugs, a line tug, tankers and motor vessels. Since 08.2026, captain of the motor vessel ANATOLII HANKEVYCH at Nibulon.'
+  - ru: 'На флоте с 2010 года, капитаном — с 2016-го. Работал сменным капитаном, старшим помощником капитана и капитаном буксиров-толкачей, линейного буксира, танкеров и теплоходов. С 08.2026 — капитан теплохода «ANATOLII HANKEVYCH» в компании «НИБУЛОН».'
+    en: 'At sea since 2010 and a captain since 2016. I have served as relief captain, chief mate, and captain of pusher tugs, a line tug, tankers and motor vessels. Since 08.2026, captain of the motor vessel ANATOLII HANKEVYCH at Nibulon.'
   - ru: Работал на внутренних водных путях Украины — Днепре и Южном Буге, в северо-западной части Чёрного моря (порты Очаков, Николаев, Херсон, Одесса, Черноморск, Южный) и на Дунае (Измаил). Образование — бакалавр по судовождению и инженер-электромеханик.
     en: 'I have worked on Ukraine''s inland waterways (the Dnipro and Southern Bug), in the north-western Black Sea (ports of Ochakiv, Mykolaiv, Kherson, Odesa, Chornomorsk, Pivdennyi) and on the Danube (Izmail). Education: Bachelor in Navigation and electromechanical engineer.'
   stats:
   - value:
-      ru: с 2015
-      en: since 2015
+      ru: 16+
+      en: ''
     label:
-      ru: на флоте
-      en: in the fleet
+      ru: лет на флоте
+      en: years at sea
+  - value:
+      ru: 10+
+      en: ''
+    label:
+      ru: лет капитаном
+      en: years as captain
   - value:
       ru: '9'
       en: ''

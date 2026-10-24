@@ -275,7 +275,7 @@ def render_index():
         {T(A['eyebrow'], 'p', 'eyebrow')}
         {T(A['heading'], 'h2')}
 {paras}
-        <ul class="stats">
+        <ul class="stats stats--{len(A['stats'])}">
 {stats}
         </ul>
       </div>
