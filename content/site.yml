@@ -4,9 +4,9 @@
 
 meta:
   title: Олег Ерулевич — капитан · Дунай и внутренние водные пути Украины
-  description: 'Олег Ерулевич — капитан в компании «НИБУЛОН». Теплоходы, танкеры и буксиры-толкачи: Дунай, Днепр, Южный Буг, северо-западная часть Чёрного моря. Опыт, образование, суда и контакты.'
+  description: 'Олег Ерулевич — капитан в компании «НИБУЛОН». Буксиры-толкачи и танкеры: Дунай, Днепр, Южный Буг, северо-западная часть Чёрного моря. Опыт, образование, суда и контакты.'
   og_title: Олег Ерулевич — капитан · Дунай и внутренние водные пути Украины
-  og_description: 'Капитан в компании «НИБУЛОН». Теплоходы, танкеры и буксиры-толкачи: Дунай, Днепр, Южный Буг, северо-запад Чёрного моря.'
+  og_description: 'Капитан в компании «НИБУЛОН». Буксиры-толкачи и танкеры: Дунай, Днепр, Южный Буг, северо-запад Чёрного моря.'
   og_url: '[https://ваш-сайт.example]'
   og_image: '[https://ваш-сайт.example/images/photo.jpg]'
 person:
@@ -54,8 +54,8 @@ hero:
     ru: Капитан речных, портовых судов и судов прибрежного плавания
     en: Master of river, harbour and coastal vessels
   lead:
-    ru: 'Сейчас — капитан буксира-толкача «ANATOLII HANKEVYCH» в компании «НИБУЛОН». На флоте с 2010 года, капитаном с 2016-го: теплоходы, танкеры и буксиры-толкачи на Дунае, Днепре, Южном Буге и в северо-западной части Чёрного моря.'
-    en: 'Currently master of the pusher tug ANATOLII HANKEVYCH at NIBULON. At sea since 2010 and a captain since 2016: motor vessels, tankers and pusher tugs on the Danube, Dnipro, Southern Bug and in the north-western Black Sea.'
+    ru: 'Сейчас — капитан буксира-толкача ASD «ANATOLII HANKEVYCH» в компании «НИБУЛОН». На флоте с 2010 года, капитаном с 2016-го: буксиры-толкачи и танкеры на Дунае, Днепре, Южном Буге и в северо-западной части Чёрного моря.'
+    en: 'Currently master of the ASD pusher tug ANATOLII HANKEVYCH at NIBULON. At sea since 2010 and a captain since 2016: pusher tugs and tankers on the Danube, Dnipro, Southern Bug and in the north-western Black Sea.'
   cta_contact:
     ru: Связаться
     en: Get in touch
@@ -70,8 +70,8 @@ about:
     ru: Капитан с опытом на реках и в море
     en: A captain with river and sea experience
   paragraphs:
-  - ru: 'На флоте с 2010 года, капитаном — с 2016-го. Работал сменным капитаном, старшим помощником капитана и капитаном буксиров-толкачей, линейного буксира, танкеров и теплоходов. С 08.2026 — капитан буксира-толкача «ANATOLII HANKEVYCH» в компании «НИБУЛОН».'
-    en: 'At sea since 2010 and a captain since 2016. I have served as relief captain, chief mate, and captain of pusher tugs, a line tug, tankers and motor vessels. Since 08.2026, captain of the pusher tug ANATOLII HANKEVYCH at Nibulon.'
+  - ru: 'На флоте с 2010 года, капитаном — с 2016-го. Работал сменным капитаном, старшим помощником капитана и капитаном буксиров-толкачей, линейного буксира и танкеров. С 08.2026 — капитан буксира-толкача ASD «ANATOLII HANKEVYCH» в компании «НИБУЛОН».'
+    en: 'At sea since 2010 and a captain since 2016. I have served as relief captain, chief mate, and captain of pusher tugs, a line tug and tankers. Since 08.2026, captain of the ASD pusher tug ANATOLII HANKEVYCH at Nibulon.'
   - ru: Работал на внутренних водных путях Украины — Днепре и Южном Буге, в северо-западной части Чёрного моря (порты Очаков, Николаев, Херсон, Одесса, Черноморск, Южный) и на Дунае (Измаил). Образование — бакалавр по судовождению и инженер-электромеханик.
     en: 'I have worked on Ukraine''s inland waterways (the Dnipro and Southern Bug), in the north-western Black Sea (ports of Ochakiv, Mykolaiv, Kherson, Odesa, Chornomorsk, Pivdennyi) and on the Danube (Izmail). Education: Bachelor in Navigation and electromechanical engineer.'
   stats:
@@ -154,8 +154,8 @@ experience:
       ru: 'Капитан'
       en: 'Captain'
     vessel_type:
-      ru: 'Буксир-толкач'
-      en: 'Pusher tug'
+      ru: 'Буксир-толкач ASD'
+      en: 'ASD pusher tug'
     vessel:
       ru: 'ANATOLII HANKEVYCH'
       en: ''
@@ -172,8 +172,8 @@ experience:
       ru: 'Капитан'
       en: 'Captain'
     vessel_type:
-      ru: 'Теплоход'
-      en: 'Motor vessel'
+      ru: 'Буксир-толкач ASD'
+      en: 'ASD pusher tug'
     vessel:
       ru: 'Nibulon-3'
       en: ''
@@ -190,8 +190,8 @@ experience:
       ru: 'Капитан'
       en: 'Captain'
     vessel_type:
-      ru: 'Теплоход'
-      en: 'Motor vessel'
+      ru: 'Буксир-толкач'
+      en: 'Pusher tug'
     vessel:
       ru: 'MILLENNIUM FALCON'
       en: ''
