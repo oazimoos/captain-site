@@ -272,3 +272,6 @@ body.lb-open{overflow:hidden}
 .socials a.social--telegram{background:#229ED9;border-color:#229ED9;color:#fff}
 .socials a.social--telegram span{opacity:.9}
 .socials a.social--telegram:hover{background:#1b86ba;border-color:#1b86ba;color:#fff}
+.socials a.social--instagram{background:linear-gradient(45deg,#f09433,#dc2743 50%,#bc1888);border-color:transparent;color:#fff}
+.socials a.social--instagram span{opacity:.9}
+.socials a.social--instagram:hover{filter:brightness(.92);color:#fff}

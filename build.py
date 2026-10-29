@@ -108,6 +108,10 @@ def header(home):
 SOCIAL_ICONS = {
     'telegram': '<svg class="social__icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">'
                 '<path fill="currentColor" d="M21.94 4.3 18.9 18.62c-.23 1.01-.83 1.26-1.68.79l-4.63-3.41-2.23 2.15c-.25.25-.45.45-.93.45l.33-4.71 8.58-7.75c.37-.33-.08-.52-.58-.18L7.22 12.64 2.65 11.2c-.99-.31-1.01-.99.21-1.47L20.7 2.86c.83-.31 1.55.19 1.24 1.44z"/></svg>',
+    'instagram': '<svg class="social__icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">'
+                 '<rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>'
+                 '<circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/>'
+                 '<circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg>',
 }
 
 
