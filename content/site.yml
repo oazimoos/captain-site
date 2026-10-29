@@ -438,9 +438,9 @@ contact:
     en: For work enquiries, please write to my email.
   socials:
   - name: Telegram
-    url: '#'
+    url: https://t.me/AdenQs
     handle:
-      ru: '[@username]'
+      ru: '@AdenQs'
       en: ''
   - name: LinkedIn
     url: '#'

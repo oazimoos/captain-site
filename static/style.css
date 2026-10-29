@@ -267,3 +267,8 @@ body.lb-open{overflow:hidden}
 .timeline__details{font-size:.93rem;margin:0}
 /* длинный заголовок «Обо мне» — чуть компактнее */
 #about h2{font-size:clamp(1.45rem,1.05rem + 1.6vw,2.15rem);line-height:1.25}
+.socials a{align-items:center}
+.social__icon{flex:none}
+.socials a.social--telegram{background:#229ED9;border-color:#229ED9;color:#fff}
+.socials a.social--telegram span{opacity:.9}
+.socials a.social--telegram:hover{background:#1b86ba;border-color:#1b86ba;color:#fff}

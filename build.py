@@ -105,6 +105,12 @@ def header(home):
   </header>'''
 
 
+SOCIAL_ICONS = {
+    'telegram': '<svg class="social__icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">'
+                '<path fill="currentColor" d="M21.94 4.3 18.9 18.62c-.23 1.01-.83 1.26-1.68.79l-4.63-3.41-2.23 2.15c-.25.25-.45.45-.93.45l.33-4.71 8.58-7.75c.37-.33-.08-.52-.58-.18L7.22 12.64 2.65 11.2c-.99-.31-1.01-.99.21-1.47L20.7 2.86c.83-.31 1.55.19 1.24 1.44z"/></svg>',
+}
+
+
 def footer():
     return f'''  <footer class="footer">
     <div class="container">
@@ -223,9 +229,14 @@ def render_index():
     phone = (P.get('phone') or '').strip()
     phone_html = (f'\n        <p class="phone"><a href="tel:{esc(re.sub(r"[^0-9+]", "", phone))}">☎ {esc(phone)}</a></p>'
                   if phone else '')
-    socials = '\n'.join(
-        f'          <li><a href="{esc(s.get("url") or "#")}" aria-label="{esc(s["name"])}">{esc(s["name"])} {T(s.get("handle") or "")}</a></li>'
-        for s in C.get('socials') or [])
+    def social_li(s):
+        url = (s.get('url') or '#').strip()
+        ext = ' target="_blank" rel="noopener"' if url.startswith('http') else ''
+        icon = SOCIAL_ICONS.get(s['name'].strip().lower(), '')
+        cls = f' class="social--{esc(s["name"].strip().lower())}"' if icon else ''
+        return (f'          <li><a{cls} href="{esc(url)}"{ext} aria-label="{esc(s["name"])}">'
+                f'{icon}{esc(s["name"])} {T(s.get("handle") or "")}</a></li>')
+    socials = '\n'.join(social_li(s) for s in C.get('socials') or [])
 
     edu_names = [ru(it['institution']) for it in E['items']]
     ld = {"@context": "https://schema.org", "@type": "Person", "name": ru(P['name']), "alternateName": en(P['name']),
