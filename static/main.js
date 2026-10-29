@@ -35,14 +35,7 @@ var EN = {
   "route.danube": "Danube",
   "route.bug": "Southern Bug",
   "route.dnipro": "Dnipro",
-  "route.sea": "Black Sea",
-  "route.p.izmail": "Izmail",
-  "route.p.chornomorsk": "Chornomorsk",
-  "route.p.odesa": "Odesa",
-  "route.p.yuzhny": "Pivdennyi",
-  "route.p.ochakiv": "Ochakiv",
-  "route.p.mykolaiv": "Mykolaiv",
-  "route.p.kherson": "Kherson"
+  "route.sea": "Black Sea"
 };
 (function () {
   var btn = document.getElementById('langToggle');

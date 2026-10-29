@@ -189,7 +189,6 @@ collections:
                 widget: list
                 fields:
                   - { label: 'Район', name: name, widget: object, fields: *ru_en_string }
-                  - { label: 'Порты', name: ports, widget: object, fields: &ru_en_optional [ { label: 'RU', name: ru, widget: string, required: false }, { label: 'EN (пусто = как RU)', name: en, widget: string, required: false } ] }
               - { label: 'Подпись к схеме', name: caption, widget: object, fields: *ru_en_string }
           - label: 'Контакты'
             name: contact
@@ -205,7 +204,7 @@ collections:
                 fields:
                   - { label: 'Название', name: name, widget: string }
                   - { label: 'Ссылка', name: url, widget: string }
-                  - { label: 'Подпись', name: handle, widget: object, fields: *ru_en_optional }
+                  - { label: 'Подпись', name: handle, widget: object, fields: &ru_en_optional [ { label: 'RU', name: ru, widget: string, required: false }, { label: 'EN (пусто = как RU)', name: en, widget: string, required: false } ] }
 
   # ================= СУДА =================
   - name: vessels

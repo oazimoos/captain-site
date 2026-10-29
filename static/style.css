@@ -115,9 +115,6 @@ p{margin:0 0 1em}
 .route__river{fill:none;stroke:#3d7dd8;stroke-width:10;stroke-linecap:round}
 .route__river--glow{stroke:#8fc0ff;stroke-width:2.5;stroke-dasharray:14 18;animation:flow 3s linear infinite}
 @keyframes flow{to{stroke-dashoffset:-64}}
-.port circle{fill:var(--navy);stroke:var(--gold);stroke-width:3}
-.port text{fill:#e7edf7;font:600 15px var(--sans);text-anchor:middle}
-.port--home circle{fill:var(--gold)}
 .route__sea{fill:var(--gold-2);font:italic 14px var(--sans)}
 .route figcaption{font-size:.85rem;color:#9fb0cc;padding:.6rem .4rem 0}
 

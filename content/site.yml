@@ -72,8 +72,8 @@ about:
   paragraphs:
   - ru: 'На флоте с 2010 года, капитаном — с 2016-го. Работал сменным капитаном, старшим помощником капитана и капитаном буксиров-толкачей, линейного буксира и танкеров. С 08.2026 — капитан буксира-толкача ASD «ANATOLII HANKEVYCH» в компании «НИБУЛОН».'
     en: 'At sea since 2010 and a captain since 2016. I have served as relief captain, chief mate, and captain of pusher tugs, a line tug and tankers. Since 08.2026, captain of the ASD pusher tug ANATOLII HANKEVYCH at Nibulon.'
-  - ru: Работал на внутренних водных путях Украины — Днепре и Южном Буге, в северо-западной части Чёрного моря (порты Очаков, Николаев, Херсон, Одесса, Черноморск, Южный) и на Дунае (Измаил). Образование — бакалавр по судовождению и инженер-электромеханик.
-    en: 'I have worked on Ukraine''s inland waterways (the Dnipro and Southern Bug), in the north-western Black Sea (ports of Ochakiv, Mykolaiv, Kherson, Odesa, Chornomorsk, Pivdennyi) and on the Danube (Izmail). Education: Bachelor in Navigation and electromechanical engineer.'
+  - ru: Работал на внутренних водных путях Украины — Днепре и Южном Буге, в северо-западной части Чёрного моря и на Дунае. Образование — бакалавр по судовождению и инженер-электромеханик.
+    en: 'I have worked on Ukraine''s inland waterways (the Dnipro and Southern Bug), in the north-western Black Sea and on the Danube. Education: Bachelor in Navigation and electromechanical engineer.'
   stats:
   - value:
       ru: 16+
@@ -286,8 +286,8 @@ experience:
       ru: 'Виктори'
       en: 'Viktori'
     company:
-      ru: '«БлэкСиШиппинг», Одесса'
-      en: 'BlackSeaShipping, Odesa'
+      ru: '«БлэкСиШиппинг»'
+      en: 'BlackSeaShipping'
     details:
       ru: ''
       en: ''
@@ -304,8 +304,8 @@ experience:
       ru: 'БТ-438'
       en: 'BT-438'
     company:
-      ru: '«Вик-Ойл», Николаев'
-      en: 'Vik-Oil, Mykolaiv'
+      ru: '«Вик-Ойл»'
+      en: 'Vik-Oil'
     details:
       ru: ''
       en: ''
@@ -408,33 +408,21 @@ route:
     ru: Дунай, Днепр, Южный Буг и северо-запад Чёрного моря
     en: Danube, Dnipro, Southern Bug and the north-western Black Sea
   subtitle:
-    ru: Реки и порты, где я работал капитаном и старшим помощником.
-    en: Rivers and ports where I have worked as captain and chief mate.
+    ru: Реки и морские районы, где я работал капитаном и старшим помощником.
+    en: Rivers and sea areas where I have worked as captain and chief mate.
   areas:
   - name:
       ru: Дунай
       en: Danube
-    ports:
-      ru: Измаил
-      en: Izmail
   - name:
       ru: Днепр
       en: Dnipro
-    ports:
-      ru: Херсон
-      en: Kherson
   - name:
       ru: Южный Буг
       en: Southern Bug
-    ports:
-      ru: Николаев
-      en: Mykolaiv
   - name:
       ru: Северо-запад Чёрного моря
       en: North-western Black Sea
-    ports:
-      ru: Очаков, Одесса, Черноморск, Южный
-      en: Ochakiv, Odesa, Chornomorsk, Pivdennyi
   caption:
     ru: Схема условная, не в масштабе.
     en: Schematic, not to scale.

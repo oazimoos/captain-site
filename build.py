@@ -216,7 +216,7 @@ def render_index():
         return f'<ul{c}>\n' + '\n'.join(f'              {T(i, "li")}' for i in block['items']) + '\n            </ul>'
 
     qualities_html = render_qualities(S.get('qualities'))
-    areas = '\n'.join(f'            <li>{T(a["name"], "strong")} · {T(a.get("ports"))}</li>' for a in R['areas'])
+    areas = '\n'.join(f'            <li>{T(a["name"], "strong")}</li>' for a in R['areas'])
     route_map = open(os.path.join(ROOT, 'templates', 'route-map.html'), encoding='utf-8').read()
     route_map = re.sub(r'^<!--.*?-->\n', '', route_map, flags=re.S).rstrip('\n')
 

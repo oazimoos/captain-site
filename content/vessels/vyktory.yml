@@ -7,8 +7,8 @@ type:
   ru: линейный буксир
   en: line tug
 company:
-  ru: «БлэкСиШиппинг», Одесса
-  en: BlackSeaShipping, Odesa
+  ru: «БлэкСиШиппинг»
+  en: BlackSeaShipping
 position:
   ru: Старший помощник капитана
   en: Chief Mate
@@ -20,8 +20,8 @@ contracts:
     ru: 17.05.2016 – 17.11.2016
     en: ''
 area:
-  ru: Южный Буг, северо-западная часть Чёрного моря (порты Очаков, Одесса, Черноморск, Южный)
-  en: Southern Bug, north-western Black Sea (ports of Ochakiv, Odesa, Chornomorsk, Pivdennyi)
+  ru: Южный Буг, северо-западная часть Чёрного моря
+  en: Southern Bug, north-western Black Sea
 photo: /images/vessels/vyktory.jpg
 thumb_pos: ''
 marking:
