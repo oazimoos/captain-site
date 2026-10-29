@@ -448,10 +448,10 @@ contact:
       ru: '[профиль]'
       en: ''
   - name: Facebook
-    url: '#'
+    url: https://www.facebook.com/share/1CRQYKYmc2/
     handle:
-      ru: '[профиль]'
-      en: ''
+      ru: Олег Ерулевич
+      en: Oleg Yerulevych
   - name: Instagram
     url: https://www.instagram.com/adensq/
     handle:

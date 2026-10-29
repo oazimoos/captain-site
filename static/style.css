@@ -275,3 +275,6 @@ body.lb-open{overflow:hidden}
 .socials a.social--instagram{background:linear-gradient(45deg,#f09433,#dc2743 50%,#bc1888);border-color:transparent;color:#fff}
 .socials a.social--instagram span{opacity:.9}
 .socials a.social--instagram:hover{filter:brightness(.92);color:#fff}
+.socials a.social--facebook{background:#1877F2;border-color:#1877F2;color:#fff}
+.socials a.social--facebook span{opacity:.9}
+.socials a.social--facebook:hover{background:#1466d0;border-color:#1466d0;color:#fff}
