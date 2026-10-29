@@ -278,3 +278,29 @@ body.lb-open{overflow:hidden}
 .socials a.social--facebook{background:#1877F2;border-color:#1877F2;color:#fff}
 .socials a.social--facebook span{opacity:.9}
 .socials a.social--facebook:hover{background:#1466d0;border-color:#1466d0;color:#fff}
+/* Компактный первый экран: карусель судов сразу под ним */
+.hero{padding:2.5rem 0 4.5rem}
+.hero__inner{gap:1.6rem}
+.hero__waves{height:60px}
+#vessels{padding-top:2rem}
+@media (min-width:860px){.hero{padding:3rem 0 5rem}.hero__inner{gap:2.5rem}.photo,.photo-placeholder{width:220px}}
+@media (max-width:859px){.hero__photo{order:-1}.photo,.photo-placeholder{width:min(150px,40vw)}}
+.hero{padding:1.8rem 0 3.6rem}
+.hero h1{font-size:clamp(2.1rem,7vw,3.5rem)}
+.hero__cta{margin-top:1.2rem}
+#vessels{padding-top:1.2rem}
+#vessels .section__head{margin-bottom:1.2rem}
+@media (min-width:860px){.hero{padding:2.2rem 0 4rem}.photo,.photo-placeholder{width:200px}}
+@media (max-width:859px){.photo,.photo-placeholder{width:min(116px,32vw);box-shadow:0 0 0 6px rgba(212,166,74,.15),0 12px 30px rgba(0,0,0,.35)}.hero__inner{gap:1.1rem}}
+@media (max-width:859px){
+  .hero{padding:1.2rem 0 3rem}
+  .hero__inner{gap:.8rem}
+  .hero .eyebrow{display:none}
+  .photo,.photo-placeholder{width:min(96px,28vw)}
+  .hero__lead{font-size:.95rem}
+  .hero__cta{margin-top:1rem}
+  .hero__cta .btn{padding-top:.7rem;padding-bottom:.7rem}
+  .hero__waves{height:44px}
+  #vessels{padding-top:.6rem}
+  #vessels .section__sub{font-size:.9rem;margin-bottom:0}
+}

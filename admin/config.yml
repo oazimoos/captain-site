@@ -60,10 +60,10 @@ collections:
             widget: object
             collapsed: true
             fields:
+              - { label: 'Мои суда', name: vessels, widget: object, fields: *ru_en_string }
               - { label: 'Обо мне', name: about, widget: object, fields: *ru_en_string }
               - { label: 'Образование', name: education, widget: object, fields: *ru_en_string }
               - { label: 'Опыт', name: experience, widget: object, fields: *ru_en_string }
-              - { label: 'Мои суда', name: vessels, widget: object, fields: *ru_en_string }
               - { label: 'Районы плавания', name: route, widget: object, fields: *ru_en_string }
               - { label: 'Контакты', name: contact, widget: object, fields: *ru_en_string }
           - label: 'Первый экран'

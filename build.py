@@ -84,8 +84,8 @@ def head_common(prefix):
 def header(home):
     """home = '' для главной, '../index.html' для страниц судов."""
     N = site['nav']
-    links = [('about', 'about'), ('qualifications', 'education'), ('experience', 'experience'),
-             ('vessels', 'vessels'), ('route', 'route'), ('contact', 'contact')]
+    links = [('vessels', 'vessels'), ('about', 'about'), ('qualifications', 'education'),
+             ('experience', 'experience'), ('route', 'route'), ('contact', 'contact')]
     lis = '\n'.join(f'          <li>{T(N[k], "a", attrs=f" href=\"{home}#{a}\"")}</li>' for a, k in links)
     top = f' id="top"' if not home else ''
     brand_href = '#top' if not home else home
@@ -284,7 +284,7 @@ def render_index():
   <main id="main">
     <section class="hero">
       <div class="hero__waves" aria-hidden="true">
-        <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 60 C 240 110 480 10 720 60 S 1200 110 1440 60 V120 H0Z" fill="#f7f4ec"/></svg>
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 60 C 240 110 480 10 720 60 S 1200 110 1440 60 V120 H0Z" fill="#0b1d3a"/></svg>
       </div>
       <div class="container hero__inner">
         <div class="hero__text reveal">
@@ -299,6 +299,22 @@ def render_index():
         </div>
         <div class="hero__photo reveal">
           <img src="{esc(img_path(P['photo'], ''))}" alt="{esc(ru(P['name']))}" class="photo" width="600" height="798">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--navy" id="vessels">
+      <div class="container">
+{section_head(V, 'subtitle')}
+        <div class="carousel reveal" role="region" aria-roledescription="carousel" aria-label="{esc(ru(V['heading']))}">
+          <div class="carousel__track" tabindex="0">
+{chr(10).join(slides)}
+          </div>
+          <div class="carousel__controls">
+            <button type="button" class="carousel__btn carousel__prev" aria-label="Назад">&#8249;</button>
+            <div class="carousel__dots" role="tablist"></div>
+            <button type="button" class="carousel__btn carousel__next" aria-label="Вперёд">&#8250;</button>
+          </div>
         </div>
       </div>
     </section>
@@ -329,22 +345,6 @@ def render_index():
         <ol class="timeline">
 {tl}
         </ol>
-      </div>
-    </section>
-
-    <section class="section section--navy" id="vessels">
-      <div class="container">
-{section_head(V, 'subtitle')}
-        <div class="carousel reveal" role="region" aria-roledescription="carousel" aria-label="{esc(ru(V['heading']))}">
-          <div class="carousel__track" tabindex="0">
-{chr(10).join(slides)}
-          </div>
-          <div class="carousel__controls">
-            <button type="button" class="carousel__btn carousel__prev" aria-label="Назад">&#8249;</button>
-            <div class="carousel__dots" role="tablist"></div>
-            <button type="button" class="carousel__btn carousel__next" aria-label="Вперёд">&#8250;</button>
-          </div>
-        </div>
       </div>
     </section>
 

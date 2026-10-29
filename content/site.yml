@@ -28,6 +28,9 @@ person:
   - en
   - ru
 nav:
+  vessels:
+    ru: Мои суда
+    en: My vessels
   about:
     ru: Обо мне
     en: About
@@ -37,9 +40,6 @@ nav:
   experience:
     ru: Опыт
     en: Experience
-  vessels:
-    ru: Мои суда
-    en: My vessels
   route:
     ru: Районы плавания
     en: Sailing areas
